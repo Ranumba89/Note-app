@@ -39,10 +39,10 @@ app.post("/api/notes", (req, res) => {
     })
 
 
-    // console.log("post", "/api/notes", note);
+    
 
 })
-// Date.now()
+
 app.delete("/api/notes/:id", (req, res) => {
     const id = parseInt(req.params.id);
     const note = req.body;
@@ -63,7 +63,7 @@ app.delete("/api/notes/:id", (req, res) => {
 
 
 
-app.use(express.static('./public'));
+app.use(express.static('public'));
 
 
 app.get("/*", (req, res) => {
